@@ -41,7 +41,7 @@
 
         #inicio .contenido header .contenido-header h1 {
             text-align: center;
-            color: #ffe89c;
+            color: #AF7AC5 ;
         }
 
         #inicio .contenido header .contenido-header nav ul {
@@ -59,7 +59,7 @@
         }
 
         #inicio .contenido header .contenido-header nav ul li a:hover {
-            color: #ffe89c;
+            color: #AF7AC5 ;
         }
 
         #inicio .contenido header .contenido-header .redes a {
@@ -71,11 +71,11 @@
         }
 
         #inicio .contenido header .contenido-header .redes a:hover {
-            color: #ffe89c;
+            color: #AF7AC5 ;
         }
 
         #inicio .contenido header .contenido-header .seleccionado {
-            color: #ffe89c;
+            color: #AF7AC5 ;
         }
 
         #inicio .contenido .presentacion {
@@ -104,7 +104,7 @@
 
         #inicio .contenido .presentacion h2 span {
             font-size: 25px;
-            color: #ffe89c;
+            color: #AF7AC5 ;
         }
 
         #inicio .contenido .presentacion .descripcion {
@@ -128,7 +128,7 @@
         }
 
         #inicio .contenido .presentacion a:hover {
-            background-color: #ffe89c;
+            background-color: #AF7AC5 ;
         }
 
         #icono-nav {
@@ -151,6 +151,7 @@
         #sobremi .contenedor-foto {
             max-width: 400px;
             margin-right: 80px;
+           
         }
 
         #sobremi .contenedor-foto img {
@@ -163,7 +164,7 @@
         #sobremi .sobremi {
             margin: 0 40px;
             border-radius: 30px;
-            height: 430px;
+            height: 490px;
             background-color: #efe8d8;
 
         }
@@ -233,7 +234,7 @@
         #servicios {
             padding: 100px 15px;
             text-align: center;
-            background-color: #f3f3f3;
+            background-color: #efe8d8;
         }
 
         #servicios .titulo-seccion {
@@ -242,7 +243,7 @@
             text-transform: uppercase;
             color: #111135;
             text-decoration: underline;
-            text-decoration-color: #d3d3d3;
+            text-decoration-color: #e5ada8;
             text-decoration-thickness: 5px;
         }
 
@@ -255,10 +256,11 @@
 
         #servicios .fila .servicio {
             max-width: 350px;
-            background-color: #fff;
+            background-color: #fce2e1;
             padding: 30px;
             margin: 0 5px;
-            border-radius: 5px;
+            border-radius: 30px;
+            border: 2px solid black;
             transition: .5s;
         }
 
@@ -275,7 +277,7 @@
             padding: 20px;
             margin-bottom: 25px;
         }
-
+        
         #servicios .fila .servicio h4 {
             font-size: 22px;
             margin-bottom: 25px;
@@ -289,9 +291,8 @@
         }
 
         #servicios .fila .servicio ul {
-            list-style: none;
-            display: flex;
-            justify-content: space-around;
+            text-align: start;       
+            justify-content:start;
             margin-bottom: 10px;
         }
 
@@ -424,7 +425,7 @@
             text-transform: uppercase;
             color: #111135;
             text-decoration: underline;
-            text-decoration-color: #d3d3d3;
+            text-decoration-color: #e5ada8;
             text-decoration-thickness: 5px;
         }
 
@@ -459,7 +460,7 @@
             position: absolute;
             left: 0px;
             background-color: rgba(0, 0, 0, 0.8);
-            color: #ffe89c;
+            color: #AF7AC5 ;
             width: 100%;
             padding: 10px;
             opacity: 0;
@@ -534,10 +535,44 @@
         }
 
         #contacto .btn-enviar:hover {
-            background-color: #ffe89c;
+            background-color: #AF7AC5 ;
             color: #fff;
         }
-
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 9999;
+        }
+        
+        .modal-content {
+            border-radius: 25px;
+            background-color: #fefefe;
+            margin: 20% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        
+        .close {
+            color: #e5ada8;
+            float: right;
+            font-size: 35px;
+            font-weight: bold;
+            align-items: center;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
         /* *********************/
         /* seccion F O O T E R */
         /* *********************/
