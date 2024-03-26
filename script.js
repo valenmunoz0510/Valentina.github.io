@@ -39,24 +39,20 @@ function efectoHabilidades() {
     }
 
 }
-// Función para manejar el envío del formulario
 document.getElementById("formulario-contacto").addEventListener("submit", function(event){
-    event.preventDefault(); // Evitar el envío del formulario
+    event.preventDefault();
 
-    // Aquí puedes agregar tu lógica de validación del formulario si lo deseas
-
-    // Mostrar la ventana modal
     document.getElementById('miModal').style.display = 'block';
 });
 
-// Cerrar la ventana modal al hacer clic en el botón de cerrar (×)
 document.querySelector('.close').addEventListener('click', function(){
     document.getElementById('miModal').style.display = 'none';
+    document.getElementById("formulario-contacto").reset();
 });
 
-// Cerrar la ventana modal al hacer clic fuera de ella
 window.addEventListener('click', function(event){
     if (event.target == document.getElementById('miModal')) {
         document.getElementById('miModal').style.display = 'none';
+        document.getElementById("formulario-contacto").reset();
     }
 });
